@@ -1,13 +1,17 @@
+#Azure Provider Variables
+variable "subscription_id" {}
+variable "client_id" {}
+variable "client_secret" {}
+variable "tenant_id" {}
+variable "location" {
+    default = "Central US"
+}
+
 variable "vnet_name" {
   description = "Name of the vnet to create"
   type        = string
   default     = "dktest-vnet01"
 }
-
-variable "subscriptionId" {}
-variable "clientId" {}
-variable "clientSecret" {}
-variable "tenantId" {}
 
 variable "resource_group_name" {
   description = "Name of the resource group to be imported."
