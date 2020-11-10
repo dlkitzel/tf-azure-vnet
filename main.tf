@@ -1,6 +1,10 @@
 #Azure Generic vNet Module
 data azurerm_resource_group "vnet" {
   name = var.resource_group_name
+  subscriptionId = var.subscription_id
+  tenantId = var.tenant_id
+  clientId = var.client_id
+  clientSecret = var.client_secret
 }
 
 resource azurerm_virtual_network "vnet" {
